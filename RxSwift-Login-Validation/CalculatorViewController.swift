@@ -17,6 +17,10 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var lblOperator: UILabel!
     @IBOutlet weak var lblSum: UILabel!
     
+    @IBOutlet weak var btnAdd: UIButton!
+    @IBOutlet weak var btnSubstract: UIButton!
+    @IBOutlet weak var btnMultiply: UIButton!
+    @IBOutlet weak var btnDivide: UIButton!
     
 
     var calculatorViewModel = CalculatorViewModel()
@@ -42,13 +46,23 @@ class CalculatorViewController: UIViewController {
          */
         _ = calculatorViewModel.changeOperator.bind(to: lblOperator.rx.text)
         _ = calculatorViewModel.calcAnswer.map{ "\($0)" }.bind(to: lblSum.rx.text)
+        
+        /**
+         * Calculator operator button tap event. I have given each button a tag using the UI builder.
+         * Sends the button tag to viewmodal changeOperator function.
+         * ** YOU CAN ALSO USE A BUTTON ACTION TO DO THIS TASK TOO.
+         */
+        _ = btnAdd.rx.tap.subscribe( onNext:{ self.calculatorViewModel.changeOperator(buttonId: self.btnAdd.tag) })
+        _ = btnSubstract.rx.tap.subscribe( onNext:{ self.calculatorViewModel.changeOperator(buttonId: self.btnSubstract.tag) })
+        _ = btnMultiply.rx.tap.subscribe( onNext:{ self.calculatorViewModel.changeOperator(buttonId: self.btnMultiply.tag) })
+        _ = btnDivide.rx.tap.subscribe( onNext:{ self.calculatorViewModel.changeOperator(buttonId: self.btnDivide.tag) })
     }
 
-    /**
-     * Calculator operator button click event. I have given each button a tag using the UI builder.
-     * Send the button tag to viewmodal.
-     */
-    @IBAction func changeop(_ sender: UIButton) {
-        calculatorViewModel.changeOperator(buttonId: sender.tag)
-    }
+//    /**
+//     * Calculator operator button click event. I have given each button a tag using the UI builder.
+//     * Send the button tag to viewmodal.
+//     */
+//    @IBAction func changeop(_ sender: UIButton) {
+//        calculatorViewModel.changeOperator(buttonId: sender.tag)
+//    }
 }
