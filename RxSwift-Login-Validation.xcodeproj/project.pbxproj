@@ -18,6 +18,8 @@
 		D778CC321F15C363005A8544 /* RxSwift_Login_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778CC311F15C363005A8544 /* RxSwift_Login_ValidationTests.swift */; };
 		D778CC3D1F15C363005A8544 /* RxSwift_Login_ValidationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778CC3C1F15C363005A8544 /* RxSwift_Login_ValidationUITests.swift */; };
 		D778CC4C1F15D27B005A8544 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778CC4B1F15D27B005A8544 /* LoginViewModel.swift */; };
+		D778CC551F161259005A8544 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778CC541F161259005A8544 /* CalculatorViewController.swift */; };
+		D778CC571F161278005A8544 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778CC561F161278005A8544 /* CalculatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		D778CC3C1F15C363005A8544 /* RxSwift_Login_ValidationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift_Login_ValidationUITests.swift; sourceTree = "<group>"; };
 		D778CC3E1F15C363005A8544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D778CC4B1F15D27B005A8544 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D778CC4E1F15FCB0005A8544 /* Getting started.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Getting started.playground"; sourceTree = "<group>"; };
+		D778CC541F161259005A8544 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		D778CC561F161278005A8544 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		EA7177E47B4439493394A51F /* Pods-RxSwift-Login-ValidationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Login-ValidationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-Login-ValidationUITests/Pods-RxSwift-Login-ValidationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,12 +134,15 @@
 		D778CC1B1F15C363005A8544 /* RxSwift-Login-Validation */ = {
 			isa = PBXGroup;
 			children = (
+				D778CC531F161232005A8544 /* View Controller */,
+				D778CC521F160E11005A8544 /* Extensions */,
+				D778CC511F160E0B005A8544 /* Services */,
+				D778CC501F160E03005A8544 /* View */,
+				D778CC4F1F160DF7005A8544 /* Model */,
+				D778CC4D1F15FC84005A8544 /* Playgrounds */,
 				D778CC4A1F15D265005A8544 /* ViewModel */,
 				D778CC1C1F15C363005A8544 /* AppDelegate.swift */,
-				D778CC1E1F15C363005A8544 /* ViewController.swift */,
-				D778CC201F15C363005A8544 /* Main.storyboard */,
 				D778CC231F15C363005A8544 /* Assets.xcassets */,
-				D778CC251F15C363005A8544 /* LaunchScreen.storyboard */,
 				D778CC281F15C363005A8544 /* Info.plist */,
 			);
 			path = "RxSwift-Login-Validation";
@@ -162,8 +170,56 @@
 			isa = PBXGroup;
 			children = (
 				D778CC4B1F15D27B005A8544 /* LoginViewModel.swift */,
+				D778CC561F161278005A8544 /* CalculatorViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D778CC4D1F15FC84005A8544 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				D778CC4E1F15FCB0005A8544 /* Getting started.playground */,
+			);
+			name = Playgrounds;
+			sourceTree = "<group>";
+		};
+		D778CC4F1F160DF7005A8544 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D778CC501F160E03005A8544 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D778CC201F15C363005A8544 /* Main.storyboard */,
+				D778CC251F15C363005A8544 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D778CC511F160E0B005A8544 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		D778CC521F160E11005A8544 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D778CC531F161232005A8544 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D778CC1E1F15C363005A8544 /* ViewController.swift */,
+				D778CC541F161259005A8544 /* CalculatorViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 		FBC326BE27796F555B2EF07F /* Frameworks */ = {
@@ -459,7 +515,9 @@
 			files = (
 				D778CC1F1F15C363005A8544 /* ViewController.swift in Sources */,
 				D778CC1D1F15C363005A8544 /* AppDelegate.swift in Sources */,
+				D778CC551F161259005A8544 /* CalculatorViewController.swift in Sources */,
 				D778CC4C1F15D27B005A8544 /* LoginViewModel.swift in Sources */,
+				D778CC571F161278005A8544 /* CalculatorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

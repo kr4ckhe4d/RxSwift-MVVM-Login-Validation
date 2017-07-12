@@ -33,6 +33,14 @@ class ViewController: UIViewController {
             self.validitylabel.text = isValid ? "Valid" : "Form is Invalid"
             self.validitylabel.textColor = isValid ? UIColor.green : UIColor.red
         })
+        
+        loginbutton.addTarget(self, action: #selector(self.loginTapped(_button:)), for: UIControlEvents.touchUpInside)
+    }
+    
+    func loginTapped(_button: UIButton) {
+        let calcVC = self.storyboard?.instantiateViewController(withIdentifier: "CalculatorVC") as! CalculatorViewController
+        self.present(calcVC, animated: true, completion: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {

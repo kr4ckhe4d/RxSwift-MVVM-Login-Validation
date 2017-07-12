@@ -18,4 +18,8 @@ struct LoginViewModel {
         }
     }
     
+    func loginPressed() {
+        print("Login pressed")
+    }
+    
 }
