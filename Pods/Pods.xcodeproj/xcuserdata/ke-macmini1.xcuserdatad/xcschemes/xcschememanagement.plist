@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-RxSwift-Login-Validation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RxSwift-Login-ValidationTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RxSwift-Login-ValidationUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9C38954285DA3C02B346BFE00049BD61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E933D9AEF6A78536CE45F1AC2F95C83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E9EDEA316F976BE0B124C3FEF1BC268</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B68322F2A13F5CBF70529F17E21F2A3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEB8A4DBB09CC2506CDF1F6892495DBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
